@@ -1,27 +1,54 @@
 # OpenResume
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
+OpenResume is an open-source resume builder, based off of the [JSON Resume](https://jsonresume.org/) schema.
 
-## Development server
+The intention of this project is to provide a simple and free to use resource, for job-seekers in all industries - not just software developers!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**This project uses [Angular](https://angular.io) version 13.2.3.**
 
-## Code scaffolding
+## Development
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### How to Run
 
-## Build
+In order to run the project in a local development environment, Node v12.20.x or later must be installed, along with v13.2.x of the Angular CLI ([reference](https://gist.github.com/LayZeeDK/c822cc812f75bb07b7c55d07ba2719b3)).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Clone**
 
-## Running unit tests
+```sh
+$ git clone https://github.com/anthy16/web-portfolio.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Install Dependencies**
 
-## Running end-to-end tests
+```sh
+$ npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**Run Application**
 
-## Further help
+```sh
+$ npm run start
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**Run Tests**
+
+```sh
+$ npm run test
+```
+
+### Tooling
+
+| Tool                            | Purpose                                                                                    |
+| ------------------------------- | ------------------------------------------------------------------------------------------ |
+| [Angular](https://angular.io)   | Base SPA framework used. Angular provides good tooling and a fast development environment. |
+| [Prettier](https://prettier.io) | Used to keep a consistent formatting style throughout the project.                         |
+| [Jest](https://jestjs.io)       | Provides (faster than Karma) unit testing capabilities and coverage reporting.             |
+
+### Scripts
+
+| Script name     | Description                                                                         |
+| --------------- | ----------------------------------------------------------------------------------- |
+| `build`         | Makes a build of the Angular application (uses default `development` configuration) |
+| `start`         | Runs the Angular development server (accessible from port `4200`)                   |
+| `test`          | Runs all Jest unit tests                                                            |
+| `test:coverage` | Runs all Jest unit tests and creates a coverage report                              |
